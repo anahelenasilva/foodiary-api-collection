@@ -1,0 +1,27 @@
+meta {
+  name: SignUp
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{base_url}}/signup
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "goal": "lose_weight",
+    "biologicalGender": "female",
+    "birthDate": "1993-10-26",
+    "height": 173,
+    "weight": 90,
+    "activityLevel": 1,
+    "account": {
+      "name": "Ana",
+      "email": "ana@ana.com",
+      "password": "12345678"
+    }
+  }
+}
