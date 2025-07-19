@@ -1,0 +1,25 @@
+meta {
+  name: ListMeals
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{base_url}}/meals?date=2025-07-19
+  body: none
+  auth: inherit
+}
+
+params:query {
+  date: 2025-07-19
+}
+
+headers {
+  Authorization: Bearer 
+}
+
+body:json {
+  {
+    "fileType": "audio/m4a"
+  }
+}

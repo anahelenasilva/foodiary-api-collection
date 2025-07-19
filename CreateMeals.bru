@@ -1,0 +1,21 @@
+meta {
+  name: CreateMeals
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{base_url}}/meals
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer 
+}
+
+body:json {
+  {
+    "fileType": "audio/m4a"
+  }
+}

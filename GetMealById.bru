@@ -1,0 +1,21 @@
+meta {
+  name: GetMealById
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{base_url}}/meals/c1ddbfe6-15d4-4532-b6c5-fb06749dba86
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer 
+}
+
+body:json {
+  {
+    "fileType": "audio/m4a"
+  }
+}
